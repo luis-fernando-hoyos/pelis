@@ -8,13 +8,13 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- estilos -->
-   	 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   	
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
      	<link rel="stylesheet" href="{{ url('css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ url('css/app.css') }}">
-        <link rel="stylesheet" href="{{ url('css/bootstrap-material-design.css') }}">
-        <link rel="stylesheet" href="{{ url('css/ripples.css') }}">
-        <link rel="stylesheet" href="{{ url('css/styles.css')}}">
+      <link rel="stylesheet" href="{{ url('css/app.css') }}">
+      <link rel="stylesheet" href="{{ url('css/styles.css')}}">
     <!-- fin de estilos -->
+
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -25,44 +25,46 @@
 </head>
 
 <body>
-<div class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="javascript:void(0)">Inicio</a>
-    </div>
-    <div class="navbar-collapse collapse navbar-responsive-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="javascript:void(0)">Emision</a></li>
-        <li><a href="javascript:void(0)">Anime</a></li>
-        <li><a href="javascript:void(0)">Categoria</a></li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control col-sm-8" placeholder="Buscar">
-        </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="javascript:void(0)">Registro</a></li>
-        <li><a href="javascript:void(0)">series</a></li>
-        <li><a href="javascript:void(0)">GOT</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" style="color:white;" href="#">Peliculas</a>
 
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:white;" >Emision<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:white;" href="#">Anime</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " style="color:white;" href="#">Estreno</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link " style="color:white;" href="#">Recomedados</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" style="color:white;" href="#">Series</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:white;" href="#">Categorias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:white;" href="#">Destacados</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 " >
+      <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar">
+      <button class="btn btn-outline-success my-2 my-sm-0" style="color:white;" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
   	@yield('content')
-    <script src="{{ url('js/jquery-3.1.1.min.js') }}"></script> 
-	<script src="{{ url('js/app.js') }}"></script> 
-    <script src="{{ url('js/ripples.js') }}"></script>
-    <script src="{{ url('js/material.js') }}"></script>
-    <script>
-          $.material.init();
-    </script>
-     <script src="{{ asset('js/app.js') }}"></script>-->
+     <script src="{{ asset('js/app.js') }}"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>

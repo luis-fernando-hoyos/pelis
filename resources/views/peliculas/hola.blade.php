@@ -67,7 +67,8 @@
     </table>
 </div>
 @stop
-
+@endsection
+@yield('content')
 <script type="text/javascript">
    
 jQuery(document).ready(function() {

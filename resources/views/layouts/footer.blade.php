@@ -1,67 +1,177 @@
-<link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
-<!--footer start from here-->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 footer-col">
-        <div class="logofooter"> Logo</div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-        <p><i class="fa fa-map-pin"></i> #228, Tiruvannamalai, Tamilnadu, India</p>
-        <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 999 999</p>
-        <p><i class="fa fa-envelope"></i> E-mail : info@prabuuideveloper.com</p>
-        
-      </div>
-      <div class="col-md-3 col-sm-6 footer-col">
-        <h6 class="heading7">GENERAL LINKS</h6>
-        <ul class="footer-ul">
-          <li><a href="#"> Career</a></li>
-          <li><a href="#"> Privacy Policy</a></li>
-          <li><a href="#"> Terms & Conditions</a></li>
-          <li><a href="#"> Client Gateway</a></li>
-          <li><a href="#"> Ranking</a></li>
-          <li><a href="#"> Case Studies</a></li>
-          <li><a href="#"> Frequently Ask Questions</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 footer-col">
-        <h6 class="heading7">LATEST POST</h6>
-        <div class="post">
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 footer-col">
-        <h6 class="heading7">Social Media</h6>
-        <ul class="footer-social">
-          <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
-          <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
-          <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
-          <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
-        </ul>
-      </div>
+<br>
+<div class="fotos container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <img src="img/2.jpg" style="height: 250px; width: 200px;">
     </div>
-  </div>
-</footer>
-<!--footer start from here-->
 
-<div class="copyright">
-  <div class="container">
-    <div class="col-md-6">
-      <p>© 2017 - All Rights with prabuuideveloper</p>
+    <div class="col-md-2">
+      <img src="img/1.jpg" style="height: 250px; width: 200px;">
     </div>
-    <div class="col-md-6">
-      <ul class="bottom_ul">
-        <li><a href="#">prabuuideveloper.com</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Faq's</a></li>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Site Map</a></li>
-      </ul>
+
+    <div class="col-md-2">
+      <img src="img/3.jpg" style="height: 250px; width: 200px;">
     </div>
+      
+    <div class="col-md-2">
+      <img src="img/2.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+     <div class="col-md-2">
+      <img src="img/2.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+     <div class="col-md-2">
+      <img src="img/2.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+  </div><br>
+  <div class="row">
+    <div class="col-md-2">
+      <img src="img/4.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+    <div class="col-md-2">
+      <img src="img/3.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+    <div class="col-md-2">
+      <img src="img/1.jpg" style="height: 250px; width: 200px;">
+    </div>
+      
+    <div class="col-md-2">
+      <img src="img/4.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+     <div class="col-md-2">
+      <img src="img/2.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+     <div class="col-md-2">
+      <img src="img/2.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+  </div><br>
+
+    <div class="row">
+    <div class="col-md-2">
+      <img src="img/4.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+    <div class="col-md-2">
+      <img src="img/3.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+    <div class="col-md-2">
+      <img src="img/1.jpg" style="height: 250px; width: 200px;">
+    </div>
+      
+    <div class="col-md-2">
+      <img src="img/4.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+     <div class="col-md-2">
+      <img src="img/2.jpg" style="height: 250px; width: 200px;">
+    </div>
+
+     <div class="col-md-2">
+      <img src="img/2.jpg" style="height: 250px; width: 200px;">
+    </div>
+
   </div>
 </div>
+<br>
+
+<div class="container-fuid blanco">
+<h2>Example body text</h2>
+
+<p>Nullam quis risus eget
+  <a href="javascript:void(0)">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+</p>
+
+<p>
+  <small>This line of text is meant to be treated as fine print.</small>
+</p>
+<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+
+<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+
+<p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <div class="search-text"> 
+       <div class="container-fluid">
+         <div class="row text-center">
+           <div class="form col-md-12">
+               <h4>SIGN UP TO OUR NEWSLETTER</h4>
+                <form id="search-form" class="form-search form-horizontal">
+                    <input type="text" class="input-search" placeholder="Email Address">
+                    <button type="submit" class="btn-search">SUBMIT</button>
+                </form>
+            </div>
+        
+          </div>         
+       </div>     
+  </div>
+  
+    <footer>
+     <div class="container">
+       <div class="row">
+       
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <span class="logo">LOGO</span>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="menu">
+                         <span>Menu</span>    
+                         <li>
+                            <a href="#">Home</a>
+                          </li>
+                               
+                          <li>
+                             <a href="#">About</a>
+                          </li>
+                               
+                          <li>
+                            <a href="#">Blog</a>
+                          </li>
+                               
+                          <li>
+                             <a href="#">Gallery </a>
+                          </li>
+                     </ul>
+                </div>
+           
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="adress">
+                        <span>Contact</span>       
+                        <li>
+                           <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">Phone</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">Adress</a>
+                        </li> 
+                        <li>
+                           <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Email</a>
+                        </li> 
+                   </ul>
+               </div>
+           
+           
+           </div> 
+        </div>
+    </footer>
 @yield ('content')
 
        
