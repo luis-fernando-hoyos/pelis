@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Calificacion extends Model
 {
     protected $table = 'calificacion';
-	protected $primaryKey = 'tipo_clf';	
+	protected $primaryKey = 'cod_clf';	
     public $incrementing = false;
 	public $timestamps = false;
 }

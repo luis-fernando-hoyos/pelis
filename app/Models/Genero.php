@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Genero extends Model
 {
     protected $table = 'genero';
-	protected $primaryKey = 'tipo_gen';	
+	protected $primaryKey = 'cad_gen';	
     public $incrementing = false;
 	public $timestamps = false;
 }

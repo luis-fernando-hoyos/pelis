@@ -1,126 +1,108 @@
 @extends ('layouts.nav')
 
-@section  ('content')
- <div><a href="{{ url('peliculas/create') }}" type="button" class="btn btn-raised btn-primary">Add Movie</a></div>
-<br>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol> 
+@section('content')
+<div class="well">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="img/2.jpg" alt="...">
-      <div class="carousel-caption">
-        <h3>blog de peliculas</h3>
-        <p>hola mundo</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="img/3.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>blog de peliculas</h3>
-        <p>hola mundo</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="img/4.jpg" alt="...">
-      <div class="carousel-caption">
-          <h3>blog de peliculas</h3>
-        <p>hola mundo</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    
+    <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
+      <thead>
+        <tr>
+            <th class="text-center">Codigo</th>
+            <th class="text-center">Nombre</th>
+            <th class="text-center">Año Estreno</th>
+            <th class="text-center">Sipnosis</th>
+            <th class="text-center">Idioma</th>
+            <th class="text-center">Calidad</th>
+            <th class="text-center">Director</th>
+            <th class="text-center">Calificacion</th>
+            <th class="text-center">Genero</th>
+            <th class="text-center">Categoria</th>
+            <th class="text-center">Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach($peliculas as $filas)
+            <tr>
+                <td class="text-center">{{ $filas->cod_pel }}</td>
+                <td class="text-center">{{ $filas->nombre }}</td>
+                <td class="text-center">{{ $filas->year_est }}</td>
+                <td class="text-center">{{ $filas->sipnosis }}</td>
+                <td class="text-center">{{ $filas->idioma }}</td>
+                <td class="text-center">{{ $filas->calidad_cal }}</td>
+                <td class="text-center">{{ $filas->director }}</td>
+                <td class="text-center">{{ $filas->calificacion_clf }}</td>
+                <td class="text-center">{{ $filas->genero_gen }}</td>
+                <td class="text-center">{{ $filas->categoria_cat }}</td>
+                 
+                
+                <td class="text-center">
+                    <a href="{{ url('/peliculas/edit/') }}/<?php echo $filas->cod_pel; ?>" class="btn btn-labeled btn-success">
+                        <span class="btn-label"><i class="fa fa-edit"></i></span>
+                        Editar
+                    </a>
+                    <!--<a href="{{ url('/medida/pdf/') }}/<?php //echo $filas->med_codigo; ?>"  class="btn btn-labeled btn-default" target="_blank">
+                        <span class="btn-label"><i class="fa fa-file-pdf-o"></i></span>
+                        Imprimir
+                    </a>-->
+                </td>
+            </tr>
+        @endforeach
+      </tbody>
+      <tfoot>
+        <tr>
+            
+            <th class="text-center">Codigo</th>
+            <th class="text-center">Nombre</th>
+            <th class="text-center">Año Estreno</th>
+            <th class="text-center">Sipnosis</th>
+            <th class="text-center">Idioma</th>
+            <th class="text-center">Calidad</th>
+            <th class="text-center">Director</th>
+            <th class="text-center">Calificacion</th>
+            <th class="text-center">Genero</th>
+            <th class="text-center">Categoria</th>
+            <th class="text-center">Opciones</th>
+        </tr>
+      </tfoot>
+    </table>
 </div>
+@stop
 
-<div class="pelis">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-			<h2>Example body text</h2>
-
-<p>Nullam quis risus eget
-  <a href="javascript:void(0)">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-</p>
-
-<p>
-  <small>This line of text is meant to be treated as fine print.</small>
-</p>
-<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-
-<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-
-<p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-			</div>
-			<div class="col-md-3">
-			<h2>Example body text</h2>
-
-<p>Nullam quis risus eget
-  <a href="javascript:void(0)">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-</p>
-
-<p>
-  <small>This line of text is meant to be treated as fine print.</small>
-</p>
-<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-
-<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-
-<p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-			</div>
-			<div class="col-md-3">
-			<h2>Example body text</h2>
-
-<p>Nullam quis risus eget
-  <a href="javascript:void(0)">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-</p>
-
-<p>
-  <small>This line of text is meant to be treated as fine print.</small>
-</p>
-<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-
-<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-
-<p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-			</div>
-			<div class="col-md-3">
-			<h2>Example body text</h2>
-
-<p>Nullam quis risus eget
-  <a href="javascript:void(0)">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-</p>
-
-<p>
-  <small>This line of text is meant to be treated as fine print.</small>
-</p>
-<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-
-<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-
-<p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-			</div>
-		</div>
-	</div>
-</div>
 <script type="text/javascript">
-	$('.carousel').carousel({interval: 200})
+   
+jQuery(document).ready(function() {
+    
+    var responsiveHelper_dt_basic = undefined;
+    var responsiveHelper_datatable_fixed_column = undefined;
+    var responsiveHelper_datatable_col_reorder = undefined;
+    var responsiveHelper_datatable_tabletools = undefined;
+    
+    var breakpointDefinition = {
+        tablet : 1024,
+        phone : 480
+    };
+
+    jQuery('#dt_basic').dataTable({
+            "sDom": "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs'l>r>"+
+                "t"+
+                "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
+            "autoWidth" : true,
+            "oLanguage": {
+                "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>'
+            },
+            "preDrawCallback" : function() {
+                // Initialize the responsive datatables helper once.
+                if (!responsiveHelper_dt_basic) {
+                    responsiveHelper_dt_basic = new ResponsiveDatatablesHelper(jQuery('#dt_basic'), breakpointDefinition);
+                }
+            },
+            "rowCallback" : function(nRow) {
+                responsiveHelper_dt_basic.createExpandIcon(nRow);
+            },
+            "drawCallback" : function(oSettings) {
+                responsiveHelper_dt_basic.respond();
+            }
+        });
+    }); 
+
 </script>
-@include ('layouts/footer')  
-@endsection
-
-

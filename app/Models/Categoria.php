@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Categoria extends Model
 {
     protected $table = 'categoria';
-	protected $primaryKey = 'tipo_cat';	
+	protected $primaryKey = 'cad_cat';	
     public $incrementing = false;
 	public $timestamps = false;
 }
